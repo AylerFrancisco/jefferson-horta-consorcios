@@ -1,38 +1,93 @@
-# Landing Page — Jefferson Horta (Consórcios)
+# Jefferson Horta — Consórcios & Investimentos
 
-Site estático (HTML + CSS + JavaScript puro). **Sem build, sem dependências, sem backend.**
-É só subir a pasta `site/` em qualquer hospedagem.
+Landing page institucional e de captação de leads do consultor **Jefferson Horta**,
+especialista em consórcios das maiores administradoras do Brasil (Embracon, Magalu,
+Santander, Porto, Itaú, Banco do Brasil e Volkswagen).
 
-## Arquivos
+🔗 **Site no ar:** https://jeffersonconsorcio.com.br
+
+---
+
+## Sobre o projeto
+
+O objetivo do site é apresentar o trabalho do consultor e **gerar contato qualificado**
+via WhatsApp. O visitante faz uma simulação rápida e o pedido chega pronto para o
+consultor dar sequência na negociação.
+
+### Funcionalidades
+
+- **Simulador de consórcio em 3 passos**
+  1. Escolha do tipo (Imóveis, Veículos, Serviços, Investimento, Reformas)
+  2. Valor do crédito (carta) por meio de slider
+  3. Valor da parcela que cabe no orçamento — com campo extra de **lance** quando o
+     objetivo é contemplação imediata
+- **Envio direto para o WhatsApp** do consultor, com todos os dados do pedido já
+  formatados na mensagem
+- **Seção de administradoras parceiras** em cards, com os segmentos que cada uma atende
+- **Identidade visual própria**: paleta navy + dourado, logo, selo "0% de juros" e
+  ícones desenhados sob medida
+- **100% responsivo** (desktop, tablet e celular) e otimizado para carregamento rápido
+
+---
+
+## Tecnologia
+
+Site **estático**, sem framework e sem etapa de build — apenas HTML, CSS e JavaScript
+puro (vanilla). Isso o torna leve, rápido e simples de hospedar em qualquer serviço.
+
+- HTML5 semântico
+- CSS3 (design system com variáveis, grid e flexbox)
+- JavaScript (ES6) sem dependências externas
+- Hospedagem: **GitHub Pages** com domínio próprio e HTTPS
+
+## Estrutura
+
 ```
-site/
-├─ index.html      → estrutura e conteúdo
-├─ styles.css      → design (navy + dourado, responsivo)
-├─ app.js          → simulador + integração WhatsApp
-└─ assets/         → fotos do consultor
+.
+├── index.html      # marcação e conteúdo de todas as seções
+├── styles.css      # design system e estilos responsivos
+├── app.js          # lógica do simulador e integração com o WhatsApp
+├── assets/         # imagens, logos das administradoras e ícones
+├── CNAME           # domínio personalizado (GitHub Pages)
+└── .nojekyll       # desativa o processamento Jekyll
 ```
 
-## Como publicar (escolha 1)
+---
 
-- **Netlify / Vercel:** arraste a pasta `site/` em app.netlify.com/drop (publica na hora, grátis, com HTTPS).
-- **GitHub Pages:** suba a pasta num repositório e ative Pages nas configurações.
-- **Hostinger / cPanel / qualquer host:** envie o conteúdo de `site/` para a pasta `public_html` via FTP.
+## Rodar localmente
 
-> Não precisa de Node, PHP nem banco de dados em produção. (O PHP foi usado só para testar localmente.)
+Por ser estático, basta abrir o `index.html` no navegador. Para uma prévia mais fiel
+(com servidor local), use qualquer servidor estático, por exemplo:
 
-## Como funciona o simulador
-- Cálculo com a fórmula real do consórcio:
-  `Parcela = Crédito × (1 + Taxa de Administração + Fundo de Reserva) ÷ Prazo`
-- Opção de **parcela reduzida em 50%** até a contemplação (só o fundo comum é reduzido).
-- Taxas calibradas com as tabelas reais das administradoras dos insumos
-  (Magalu 18%, veículos, pesados 20%/132m) e referências de mercado.
-- Ao final, monta uma mensagem com todos os dados (crédito, taxa, prazo, parcela, custo total)
-  e abre o **WhatsApp do consultor** (`wa.me/5527998503271`) já preenchida.
+```bash
+# Python
+python -m http.server 5500
 
-## O que editar facilmente
-- **Telefone do WhatsApp:** constante `WHATS_NUMBER` no topo de `app.js`.
-- **Taxas / prazos / tipos:** objetos `TIPOS` e `ADMINS` em `app.js`.
-- **Textos e fotos:** `index.html` e pasta `assets/`.
-- **Cores:** variáveis `:root` no topo de `styles.css`.
+# ou Node
+npx serve .
+```
 
-Contato: Jefferson Horta — (27) 99850-3271 — Jeffersonnuneshorta@gmail.com
+E acesse `http://localhost:5500`.
+
+## Publicar atualizações
+
+O site é publicado automaticamente pelo GitHub Pages a cada envio para a branch `main`:
+
+```bash
+git add -A
+git commit -m "descrição da alteração"
+git push origin main
+```
+
+A nova versão fica no ar em cerca de 1 minuto, mantendo domínio e HTTPS.
+
+---
+
+## Contato do consultor
+
+**Jefferson Horta** — Consórcios & Investimentos
+📱 (27) 99850-3271 · ✉️ jeffersonnuneshorta@gmail.com
+
+---
+
+<sub>Desenvolvido por **Ayler Francisco** · WhatsApp (27) 99864-6574</sub>
