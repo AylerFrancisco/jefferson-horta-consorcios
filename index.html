@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jefferson Horta — Especialista em Consórcios | Realize seu sonho sem juros</title>
+  <meta name="description" content="Especialista em consórcios das maiores administradoras do Brasil. Simule seu crédito sem juros e sem entrada com Jefferson Horta. Imóvel, automóvel, máquinas e cartas contempladas." />
+  <meta name="theme-color" content="#0a2540" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jefferson Horta — Especialista em Consórcios" />
+  <meta property="og:description" content="Realize seu sonho sem juros e sem entrada. Faça sua simulação gratuita agora." />
+  <meta property="og:image" content="assets/jefferson-banner.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230a2540'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='bold' fill='%23f2a73b' text-anchor='middle'>JH</text></svg>" />
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="topo">
+    <div class="container header-inner">
+      <a href="#topo" class="brand">
+        <img class="brand-mark-img" src="assets/logo-jh-icone.png" alt="Jefferson Horta" width="42" height="42" />
+        <span class="brand-text">
+          <strong>Jefferson Horta</strong>
+          <small>Consórcios &amp; Investimentos</small>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#simulador">Simulador</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#beneficios">Vantagens</a>
+        <a href="#administradoras">Administradoras</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#simulador" class="nav-cta">Simular agora</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge badge-light">★ Especialista em consórcios</span>
+        <h1>Invista no seu futuro <span class="hl">comigo</span>.</h1>
+        <p class="hero-lead">
+          Realize seus sonhos <strong>sem juros</strong> e <strong>sem entrada</strong>.
+          Parcelas que cabem no seu bolso, com toda a segurança das maiores
+          administradoras do Brasil.
+        </p>
+        <div class="hero-actions">
+          <a href="#simulador" class="btn btn-gold btn-lg">Fazer simulação gratuita →</a>
+          <a href="#" class="btn btn-ghost btn-lg" id="heroWhats">Falar no WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+4 anos</strong><span>de experiência</span></div>
+          <div><strong>7</strong><span>administradoras</span></div>
+          <div><strong>0%</strong><span>de juros</span></div>
+        </div>
+        <div class="hero-admins">
+          <span>Trabalho com as maiores:</span>
+          <div class="admin-logos">
+            <em>Embracon</em><em>Volkswagen</em><em>Santander</em><em>Porto</em><em>Itaú</em><em>Banco do Brasil</em><em>Magalu</em>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="assets/jefferson-blazer-azul.jpg" alt="Jefferson Horta, especialista em consórcios" />
+        <img class="hero-seal" src="assets/selo-sem-juros.svg" alt="Selo 0% de juros" />
+        <div class="hero-photo-card">
+          <span class="dot"></span>
+          <div>
+            <strong>Jefferson Horta</strong>
+            <small>Atendimento personalizado</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIMULADOR ============ -->
+  <section class="simulator" id="simulador">
+    <div class="container sim-inner">
+      <div class="sim-intro">
+        <span class="badge badge-gold">Simulador de Consórcio</span>
+        <h2>Simule e realize seu sonho hoje</h2>
+        <p>
+          Sem juros abusivos e sem entrada. Escolha o crédito e diga a parcela que
+          cabe no seu bolso — o Jefferson monta o <strong>prazo ideal</strong> e te
+          passa as melhores condições pelo WhatsApp.
+        </p>
+        <ul class="sim-bullets">
+          <li><i class="check"></i> Parcelas reduzidas até a contemplação</li>
+          <li><i class="check"></i> Planos flexíveis de 48 a 240 meses</li>
+          <li><i class="check"></i> Créditos a partir de R$ 15 mil</li>
+          <li><i class="check"></i> Use o lance embutido para adiantar seu bem</li>
+        </ul>
+        <div class="sim-trust">
+          <img src="assets/jefferson-cadeira-cinza.jpg" alt="Jefferson Horta" />
+          <p>“Eu não vendo consórcio: eu monto a estratégia certa pra você sair do aluguel, trocar de carro ou investir — com inteligência.”</p>
+        </div>
+      </div>
+
+      <!-- WIZARD -->
+      <div class="sim-card" id="wizard">
+
+        <!-- progress -->
+        <div class="sim-progress">
+          <div class="sim-progress-bar"><span id="progressFill"></span></div>
+          <span class="sim-step-label" id="stepLabel">Passo 1 de 3 — Crédito</span>
+        </div>
+
+        <!-- STEP 1: tipo + valor -->
+        <div class="sim-step is-active" data-step="1">
+          <h3>Escolha o tipo de consórcio</h3>
+          <div class="option-grid" id="typeGrid"><!-- preenchido via JS --></div>
+
+          <div class="credit-block">
+            <div class="credit-head">
+              <span>Valor do crédito</span>
+              <strong id="creditValue">R$ 100.000</strong>
+            </div>
+            <input type="range" id="creditRange" min="100000" max="1000000" step="10000" value="100000" />
+            <div class="credit-limits">
+              <small id="creditMin">R$ 100.000</small>
+              <small id="creditMax">R$ 1.000.000</small>
+            </div>
+          </div>
+
+          <div class="step-actions">
+            <span></span>
+            <button class="btn btn-navy" data-next>Próximo →</button>
+          </div>
+        </div>
+
+        <!-- STEP 2: parcela que cabe no bolso -->
+        <div class="sim-step" data-step="2">
+          <h3>Quanto você pode pagar por mês?</h3>
+          <p class="sim-context" id="ctx2"></p>
+
+          <div class="credit-block">
+            <div class="credit-head">
+              <span>Parcela que cabe no seu bolso</span>
+              <strong id="parcelaValue">R$ 1.000</strong>
+            </div>
+            <input type="range" id="parcelaRange" min="200" max="10000" step="50" value="1000" />
+            <div class="credit-limits">
+              <small id="parcelaMin">R$ 200</small>
+              <small id="parcelaMax">R$ 10.000</small>
+            </div>
+          </div>
+
+          <label class="field-label">Sugestões rápidas</label>
+          <div class="chip-grid" id="parcelaChips"></div>
+
+          <p class="hint-box">
+            <strong>Só escolher o valor que cabe no seu orçamento.</strong>
+            O Jefferson monta o prazo ideal pra essa parcela e te passa as melhores condições.
+          </p>
+
+          <div class="step-actions">
+            <button class="btn btn-light" data-prev>← Voltar</button>
+            <button class="btn btn-navy" data-next>Próximo →</button>
+          </div>
+        </div>
+
+        <!-- STEP 3: dados + envio -->
+        <div class="sim-step" data-step="3">
+          <h3>Para onde envio seu pedido?</h3>
+          <p class="sim-context">Preencha rapidinho para o Jefferson te retornar com o prazo ideal e tirar suas dúvidas no WhatsApp.</p>
+
+          <label class="field-label" for="leadName">Seu nome</label>
+          <input class="text-input" type="text" id="leadName" placeholder="Ex: João da Silva" autocomplete="name" />
+
+          <label class="field-label" for="leadPhone">Seu WhatsApp (opcional)</label>
+          <input class="text-input" type="tel" id="leadPhone" placeholder="(27) 99999-9999" autocomplete="tel" />
+
+          <label class="field-label" for="leadObjetivo">Qual é o seu objetivo?</label>
+          <select class="text-input" id="leadObjetivo">
+            <option value="Realizar um sonho / adquirir o bem">Realizar um sonho / adquirir o bem</option>
+            <option value="Investimento e patrimônio">Investimento e patrimônio</option>
+            <option value="Lance imediato (ser contemplado rápido)">Lance imediato (ser contemplado rápido)</option>
+            <option value="Ainda quero entender melhor">Ainda quero entender melhor</option>
+          </select>
+
+          <div class="lance-field" id="lanceField" hidden>
+            <label class="field-label" for="leadLance">Valor do lance que você pode dar</label>
+            <input class="text-input" type="text" id="leadLance" inputmode="numeric" placeholder="Ex: R$ 30.000" autocomplete="off" />
+            <small class="field-help">Quanto maior o lance, maiores as chances de ser contemplado mais rápido.</small>
+          </div>
+
+          <div class="step-actions">
+            <button class="btn btn-light" data-prev>← Voltar</button>
+            <button class="btn btn-whats btn-block" id="sendWhats">
+              <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L3 29l7.2-2.3c1.8 1 3.8 1.5 5.8 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.3 1.4 1.4-4.2-.3-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.6 4.6-10.1 10.1-10.1 5.6 0 10.1 4.6 10.1 10.1S21.6 25.6 16 25.6zm5.8-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+              Enviar simulação no WhatsApp
+            </button>
+          </div>
+          <p class="whats-note">Resposta rápida • Sem compromisso • Atendimento direto com o consultor</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="about" id="sobre">
+    <div class="container about-inner">
+      <div class="about-photo">
+        <img src="assets/jefferson-terno-preto.jpg" alt="Jefferson Horta" />
+      </div>
+      <div class="about-copy">
+        <span class="badge badge-gold">★ Mais de 4 anos de experiência</span>
+        <h2>Ajudando pessoas a conquistarem o que <span class="hl">realmente importa</span>.</h2>
+        <p>
+          Sou o <strong>Jefferson Horta</strong>, especialista em consórcios, com sólida
+          experiência no mercado ajudando pessoas a conquistarem patrimônio, liberdade
+          financeira e segurança verdadeira.
+        </p>
+        <p>
+          Minha missão vai muito além de vender consórcio. Eu trabalho para mostrar que é
+          possível sair do aluguel, conquistar seu carro ou investir em imóveis com
+          <strong>estratégia, planejamento e inteligência</strong> — sem depender de juros abusivos.
+        </p>
+        <p>
+          Aqui você não vai encontrar promessas vazias, mas orientação clara, direta e
+          focada no seu objetivo.
+        </p>
+        <a href="#simulador" class="btn btn-gold">Quero minha simulação</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BENEFÍCIOS ============ -->
+  <section class="benefits" id="beneficios">
+    <div class="container">
+      <div class="section-head center">
+        <h2>Por que parar de perder dinheiro?</h2>
+        <p>Você sabia que em um financiamento comum você chega a pagar o valor de
+          <strong class="danger">dois bens</strong> por causa dos juros abusivos?</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card">
+          <div class="benefit-icon" data-bicon="juros"></div>
+          <h3>Zero Juros</h3>
+          <p>Apenas uma taxa de administração fixa e transparente. Você sabe exatamente pelo que está pagando, do início ao fim.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" data-bicon="compra"></div>
+          <h3>Poder de Compra</h3>
+          <p>Com a carta de crédito em mãos, você compra à vista e ganha poder para negociar grandes descontos na hora da compra.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" data-bicon="flex"></div>
+          <h3>Flexibilidade</h3>
+          <p>Planos estruturados que se adaptam perfeitamente ao seu orçamento mensal, sem comprometer a sua qualidade de vida.</p>
+        </article>
+        <article class="benefit-card">
+          <div class="benefit-icon" data-bicon="valoriza"></div>
+          <h3>Valorização</h3>
+          <p>Enquanto o aluguel pesa, os imóveis disparam: valorização de até 40% acima da inflação. Seu dinheiro trabalhando por você.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADMINISTRADORAS ============ -->
+  <section class="admins" id="administradoras">
+    <div class="container">
+      <div class="section-head center">
+        <span class="badge badge-gold">★ Parceiras oficiais</span>
+        <h2>As maiores administradoras do Brasil</h2>
+        <p>Trabalho com grupos sólidos e fiscalizados pelo Banco Central. Na hora da
+          negociação, eu encontro a administradora com as melhores condições para o seu objetivo.</p>
+      </div>
+
+      <div class="admin-grid">
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/embracon.png" alt="Consórcio Embracon" loading="lazy" /></div>
+          <h3>Embracon</h3>
+          <p>Especialista em consórcios, uma das maiores do país.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Veículos</span><span>Serviços</span><span>Investimento</span><span>Reformas</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/magalu.png" alt="Consórcio Magalu" loading="lazy" /></div>
+          <h3>Magalu</h3>
+          <p>Consórcio do maior varejista do Brasil.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Veículos</span><span>Serviços</span><span>Investimento</span><span>Reformas</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/santander.png" alt="Santander" loading="lazy" /></div>
+          <h3>Santander</h3>
+          <p>Solidez de um dos maiores bancos do mundo.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Investimento</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/porto.png" alt="Porto" loading="lazy" /></div>
+          <h3>Porto</h3>
+          <p>Tradição e confiança em proteção e crédito.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Veículos</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/itau.png" alt="Itaú" loading="lazy" /></div>
+          <h3>Itaú</h3>
+          <p>O maior banco privado da América Latina.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Veículos</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/bb.png" alt="Banco do Brasil" loading="lazy" /></div>
+          <h3>Banco do Brasil</h3>
+          <p>Segurança e tradição do maior banco público.</p>
+          <div class="admin-tags"><span>Imóveis</span><span>Veículos</span><span>Investimento</span></div>
+        </article>
+
+        <article class="admin-card">
+          <div class="admin-logo"><img src="assets/admins/volkswagen.png" alt="Consórcio Volkswagen" loading="lazy" /></div>
+          <h3>Volkswagen</h3>
+          <p>Consórcio oficial da montadora para o seu veículo.</p>
+          <div class="admin-tags"><span>Veículos</span></div>
+        </article>
+      </div>
+
+      <p class="admins-foot">E outras administradoras parceiras — escolhemos juntos a melhor para você. <a href="#simulador">Fazer simulação →</a></p>
+    </div>
+  </section>
+
+  <!-- ============ ESTRATÉGIA / LANCE EMBUTIDO ============ -->
+  <section class="strategy" id="estrategia">
+    <div class="container strategy-inner">
+      <div class="strategy-copy">
+        <span class="badge badge-light">Estratégia real</span>
+        <h2>Pegue seu crédito rápido com <span class="hl">lance embutido</span></h2>
+        <p>
+          No nosso grupo você não depende apenas da sorte. Usamos a sua própria carta de
+          crédito para ofertar o lance — tudo isso sem descapitalizar e sem tirar dinheiro
+          do seu bolso.
+        </p>
+        <div class="example-card">
+          <span class="example-badge">✔ Exemplo prático</span>
+          <p>
+            Sua meta é comprar um carro de <strong>R$ 75 mil</strong>? Nós planejamos uma
+            carta de crédito de <strong>R$ 100 mil</strong>. Usamos <strong>R$ 25 mil</strong>
+            do consórcio como o seu lance e você retira exatamente os <strong>R$ 75 mil</strong>
+            em mãos! É o atalho estratégico para a sua contemplação.
+          </p>
+        </div>
+        <a href="#simulador" class="btn btn-gold">Montar minha estratégia</a>
+      </div>
+      <div class="strategy-photo">
+        <img src="assets/jefferson-laptop.jpg" alt="Jefferson Horta trabalhando" />
+        <img class="strategy-illu" src="assets/ilustra-crescimento.svg" alt="Crescimento de patrimônio" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <h2>Chega de adiar o seu sonho.</h2>
+      <p>Faça sua simulação e o Jefferson entra em contato para montar o perfil e o plano perfeito para você.</p>
+      <ul class="cta-checklist">
+        <li><i class="check check-gold"></i> Atendimento personalizado</li>
+        <li><i class="check check-gold"></i> Sem compromisso inicial</li>
+        <li><i class="check check-gold"></i> Segurança total na sua compra</li>
+      </ul>
+      <a href="#simulador" class="btn btn-gold btn-lg">Quero simular agora →</a>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head center">
+        <span class="badge badge-gold">Dúvidas frequentes</span>
+        <h2>Tire suas dúvidas sobre o Consórcio</h2>
+      </div>
+      <div class="faq-list" id="faqList">
+        <details class="faq-item" open>
+          <summary>Consórcio de Veículos<i></i></summary>
+          <p>Adquira seu carro zero ou seminovo, moto ou veículo pesado sem pagar juros abusivos. Planos flexíveis que se adaptam ao seu orçamento, permitindo lances para antecipar a contemplação.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Consórcio de Imóveis<i></i></summary>
+          <p>Compre, construa ou reforme seu imóvel sem juros. Use o consórcio como lance para sair do aluguel mais rápido, com crédito de R$ 100 mil a R$ 2 milhões e prazos de até 240 meses.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Serviços (Cirurgia, Reforma, Viagem...)<i></i></summary>
+          <p>Realize aquele projeto pessoal — cirurgia, reforma, festa ou viagem — de forma planejada e parcelada, sem os juros de um empréstimo pessoal.</p>
+        </details>
+        <details class="faq-item">
+          <summary>O que é a taxa de administração?<i></i></summary>
+          <p>É o único custo do consórcio: um percentual fixo e transparente, diluído ao longo das parcelas, que remunera a administradora. Não existem juros como no financiamento. Em geral varia de 15% a 22% conforme o bem e a administradora.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Alavancagem Patrimonial<i></i></summary>
+          <p>Construção e aceleração de patrimônio a longo prazo. Formação de renda passiva através da aquisição contínua de bens e imóveis utilizando a inteligência do sistema de consórcios.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img class="brand-mark-img" src="assets/logo-jh-icone.png" alt="Jefferson Horta" width="48" height="48" />
+        <div>
+          <strong>Jefferson Horta</strong>
+          <p>Especialista em consórcios das maiores administradoras do Brasil. Imóvel • Automóvel • Máquinas • Cartas Contempladas.</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <h4>Fale comigo</h4>
+        <a href="https://wa.me/5527998503271" target="_blank" rel="noopener">📱 (27) 99850-3271</a>
+        <a href="mailto:Jeffersonnuneshorta@gmail.com">✉️ Jeffersonnuneshorta@gmail.com</a>
+        <a href="#simulador">🧮 Fazer simulação gratuita</a>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <small>© <span id="year"></span> Jefferson Horta — Consórcios &amp; Investimentos. Todos os direitos reservados.</small>
+      <small>Simulações com taxas de referência de mercado. Consórcio é administrado por instituições autorizadas pelo Banco Central.</small>
+    </div>
+    <div class="footer-credit container">
+      <small>Feito por Ayler Francisco · WhatsApp <a href="https://wa.me/5527998646574" target="_blank" rel="noopener">(27) 99864-6574</a></small>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a class="whats-float" id="whatsFloat" href="https://wa.me/5527998503271?text=Ol%C3%A1%20Jefferson%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20simula%C3%A7%C3%A3o%20de%20cons%C3%B3rcio." target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor"><path d="M16 3C9 3 3.5 8.5 3.5 15.5c0 2.4.7 4.6 1.9 6.5L3 29l7.2-2.3c1.8 1 3.8 1.5 5.8 1.5 7 0 12.5-5.5 12.5-12.5S23 3 16 3zm0 22.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-4.3 1.4 1.4-4.2-.3-.4c-1-1.6-1.5-3.4-1.5-5.3 0-5.6 4.6-10.1 10.1-10.1 5.6 0 10.1 4.6 10.1 10.1S21.6 25.6 16 25.6zm5.8-7.5c-.3-.2-1.8-.9-2.1-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.5-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.6.1-.2.2-.3.3-.5.1-.2 0-.4 0-.6 0-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.2.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.3-.7.3-1.3.2-1.4-.1-.2-.3-.2-.6-.4z"/></svg>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>

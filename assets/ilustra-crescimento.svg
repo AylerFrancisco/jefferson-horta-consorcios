@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" width="420" height="320" role="img" aria-label="Crescimento de patrimônio com consórcio">
+  <defs>
+    <linearGradient id="bar" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#13406f"/>
+      <stop offset="1" stop-color="#1c5189"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#d9881f"/>
+      <stop offset="1" stop-color="#f7c364"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e3157"/>
+      <stop offset="1" stop-color="#0a2540"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="420" height="320" rx="22" fill="url(#sky)"/>
+  <!-- grid -->
+  <g stroke="#ffffff" stroke-opacity="0.06" stroke-width="1">
+    <line x1="30" y1="70" x2="390" y2="70"/>
+    <line x1="30" y1="130" x2="390" y2="130"/>
+    <line x1="30" y1="190" x2="390" y2="190"/>
+    <line x1="30" y1="250" x2="390" y2="250"/>
+  </g>
+
+  <!-- rising bars -->
+  <g>
+    <rect x="60"  y="210" width="40" height="70"  rx="6" fill="url(#bar)"/>
+    <rect x="120" y="170" width="40" height="110" rx="6" fill="url(#bar)"/>
+    <rect x="180" y="130" width="40" height="150" rx="6" fill="url(#bar)"/>
+    <rect x="240" y="95"  width="40" height="185" rx="6" fill="url(#gold)"/>
+    <rect x="300" y="60"  width="40" height="220" rx="6" fill="url(#gold)"/>
+  </g>
+
+  <!-- trend line -->
+  <polyline points="80,205 140,165 200,125 260,90 320,55" fill="none" stroke="#f2a73b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#fff" stroke="#f2a73b" stroke-width="3">
+    <circle cx="80" cy="205" r="4"/><circle cx="140" cy="165" r="4"/><circle cx="200" cy="125" r="4"/><circle cx="260" cy="90" r="4"/><circle cx="320" cy="55" r="4"/>
+  </g>
+
+  <!-- house on top -->
+  <g transform="translate(300,18)">
+    <path d="M0 14 20 0 40 14" fill="none" stroke="#fff" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M4 12v16h32V12" fill="#0a2540" stroke="#fff" stroke-width="2.5"/>
+    <rect x="15" y="18" width="10" height="10" fill="#f2a73b"/>
+  </g>
+
+  <!-- coin -->
+  <g transform="translate(46,40)">
+    <circle cx="0" cy="0" r="18" fill="url(#gold)"/>
+    <text x="0" y="6" text-anchor="middle" font-family="Arial" font-weight="800" font-size="20" fill="#0a2540">R$</text>
+  </g>
+</svg>
